@@ -1,0 +1,4789 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SavingAnalyticObjects />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='movie_gross_tbl' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Sheet1 (movie_final)' inline='true' name='federated.0w40fgo1b0wjsb1ebpezt0lng2d9' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='movie_final' name='excel-direct.0uxhq061qf4erf1e797q80es5x0c'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='D:/PROJECT_2/index.ipynb/movie_final.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0uxhq061qf4erf1e797q80es5x0c' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:I2457:no:A1:I2457:0' header='yes' outcome='6'>
+            <column datatype='real' name='popularity' ordinal='0' />
+            <column datatype='string' name='release_date' ordinal='1' />
+            <column datatype='string' name='title' ordinal='2' />
+            <column datatype='real' name='vote_average' ordinal='3' />
+            <column datatype='integer' name='vote_count' ordinal='4' />
+            <column datatype='string' name='studio' ordinal='5' />
+            <column datatype='integer' name='domestic_gross' ordinal='6' />
+            <column datatype='real' name='foreign_gross' ordinal='7' />
+            <column datatype='integer' name='year' ordinal='8' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:I2457:no:A1:I2457:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>popularity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[popularity]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>popularity</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_A7C13B0207FB47D4BE3C02C18E98CCDD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>release_date</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[release_date]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>release_date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_A7C13B0207FB47D4BE3C02C18E98CCDD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[title]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>title</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_A7C13B0207FB47D4BE3C02C18E98CCDD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>vote_average</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[vote_average]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>vote_average</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_A7C13B0207FB47D4BE3C02C18E98CCDD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>vote_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[vote_count]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>vote_count</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_A7C13B0207FB47D4BE3C02C18E98CCDD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>studio</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[studio]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>studio</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_A7C13B0207FB47D4BE3C02C18E98CCDD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>domestic_gross</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[domestic_gross]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>domestic_gross</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_A7C13B0207FB47D4BE3C02C18E98CCDD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>foreign_gross</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[foreign_gross]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>foreign_gross</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_A7C13B0207FB47D4BE3C02C18E98CCDD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_A7C13B0207FB47D4BE3C02C18E98CCDD]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_A7C13B0207FB47D4BE3C02C18E98CCDD]' role='measure' type='quantitative' />
+      <column caption='Domestic Gross' datatype='integer' name='[domestic_gross]' role='measure' type='quantitative' />
+      <column caption='Foreign Gross' datatype='real' name='[foreign_gross]' role='measure' type='quantitative' />
+      <column caption='Popularity' datatype='real' name='[popularity]' role='measure' type='quantitative' />
+      <column caption='Release Date' datatype='string' name='[release_date]' role='dimension' type='nominal' />
+      <column caption='Studio' datatype='string' name='[studio]' role='dimension' type='nominal' />
+      <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+      <column caption='Vote Average' datatype='real' name='[vote_average]' role='measure' type='quantitative' />
+      <column caption='Vote Count' datatype='integer' name='[vote_count]' role='measure' type='quantitative' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+      <column-instance column='[release_date]' derivation='None' name='[none:release_date:nk]' pivot='key' type='nominal' />
+      <column-instance column='[studio]' derivation='None' name='[none:studio:nk]' pivot='key' type='nominal' />
+      <column-instance column='[year]' derivation='None' name='[none:year:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[domestic_gross]' derivation='Sum' name='[sum:domestic_gross:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[foreign_gross]' derivation='Sum' name='[sum:foreign_gross:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[popularity]' derivation='Sum' name='[sum:popularity:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[vote_count]' derivation='Sum' name='[sum:vote_count:qk]' pivot='key' type='quantitative' />
+      <group caption='Action (Studio)' hidden='true' name='[Action (Studio)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[studio]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Studio,Title,Year)' hidden='true' name='[Action (Studio,Title,Year)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[studio]' />
+          <groupfilter function='level-members' level='[title]' />
+          <groupfilter function='level-members' level='[none:year:ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Year)' hidden='true' name='[Action (Year)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:year:ok]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/JOHN/AppData/Local/Temp/TableauTemp/#TableauTemp_0lbd9n8053fqfq15k59k709llhs2.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>popularity</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[popularity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>popularity</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1694</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>release_date</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[release_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>release_date</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>817</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>title</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1703</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>vote_average</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[vote_average]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>vote_average</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>63</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>vote_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[vote_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>vote_count</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1013</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>studio</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[studio]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>studio</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>159</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>domestic_gross</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[domestic_gross]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>domestic_gross</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1051</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>foreign_gross</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[foreign_gross]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>foreign_gross</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>754</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>year</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:studio:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Alc&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;BST&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Drft.&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Focus&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;IM&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Magn.&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Osci.&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;RLJ&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;SV&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;WB&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;3D&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;ATO&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;CLF&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;FCW&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Greenwich&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;KL&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;NFC&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;PI&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;SM&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;UTV&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Abr.&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;BG&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Da.&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;FIP&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;HTR&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;LGF&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;OMNI/FSR&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Rela.&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Strand&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Viv.&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Ampl.&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Cdgm.&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Elev.&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Free&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;ITL&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Mira.&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;P/108&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Saban&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Trib.&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;WHE&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;ALP&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;BV&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;EC&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Fox&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Imag.&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;MBox&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Outs&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Rocket&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;TA&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;WB (NL)&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;ADC&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;BGP&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;DF&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;First&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Icar.&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;LGP&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Orch.&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Relbig.&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Studio 8&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;VPD&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Arth.&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;CL&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;EXCL&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Good Deed&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Kino&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;NeoC&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;PFR&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;SHO&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Uni.&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;A23&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Aviron&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;CLS&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;FD&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Grindstone&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;KS&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;NGE&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;PM&amp;E&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;SMod&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Vari.&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;AR&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;CineGalaxy&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;EpicPics&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Global Road&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;KC&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;MPFT&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;ParV&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;SEG&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;U/P&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;AF&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;BH Tilt&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Distrib.&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;FM&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;ICir&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Libre&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;ORF&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;RF&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;STX&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;W/Dim.&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Anch.&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;CE&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;ELS&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;FRun&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;IW&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;MNE&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;P/DW&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Scre.&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;TriS&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;XL&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Annapurna&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;CF&amp;SR&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;ENTMP&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;FUN&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Jan.&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;MOM&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Pala.&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;SD&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Triu&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Yash&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Argo.&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;CJ&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Eros&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Gold.&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;KE&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;MR&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;PDA&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;SGem&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;UEP&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Asp.&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Cleopatra&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Fathom&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Grav.&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;KKM&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Neon&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;PH&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Shout!&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;UTMW&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;AM&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;BWP&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;EF&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;FoxS&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Imax&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Men.&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Over.&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Rog.&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;TAFC&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Wein.&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Affirm&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;BM&amp;DH&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;DR&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;FOAK&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;IFC&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Lorb.&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Orion&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Rialto&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Sum.&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;WAMCR&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;A24&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;AZ&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Cohen&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;FEF&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;GrtIndia&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;LD&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;NM&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;PNT&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Sony&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;VE&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;App.&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;CGld&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;EOne&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;GK&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;JBG&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Mont.&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Par.&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;SDS&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;TVC&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Zeit.&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Amazon&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;CBS&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Electric&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;FR&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Indic.&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;MGM&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;P4&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;RTWC&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;TFA&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;WGUSA&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Abk.&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;BBC&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Crnth&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;FInd.&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Hann.&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;LG/S&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;NYer&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;RAtt.&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;SPC&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Vita.&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[sum:domestic_gross:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[sum:popularity:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[sum:foreign_gross:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:release_date:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;2010-01-01&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2010-03-11&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2010-05-09&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2010-07-13&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2010-09-10&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2010-11-04&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2010-12-30&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2011-03-03&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2011-04-29&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2011-06-28&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2011-08-31&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2011-10-10&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2011-12-09&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2012-02-10&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2012-04-13&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2012-06-27&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2012-08-17&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2012-10-25&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2013-01-11&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2013-03-15&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2013-05-10&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2013-07-07&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2013-09-09&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2013-10-25&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2013-12-17&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2014-02-19&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2014-04-20&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2014-07-02&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2014-09-01&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2014-10-24&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2014-12-19&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2015-02-27&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2015-05-01&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2015-07-10&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2015-09-11&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2015-11-01&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2015-12-28&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2016-03-09&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2016-05-24&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2016-08-05&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2016-10-22&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2016-12-30&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2017-03-17&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2017-06-23&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2017-09-22&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2017-12-20&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2018-03-23&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2018-06-22&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2018-09-21&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2018-12-17&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;1964-02-03&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2010-02-05&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2010-04-20&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2010-06-18&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2010-08-20&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2010-10-06&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2010-12-16&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2011-02-03&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2011-04-11&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2011-06-07&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2011-08-05&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2011-09-23&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2011-11-11&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2012-01-06&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2012-03-23&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2012-06-01&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2012-08-01&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2012-10-05&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2012-12-14&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2013-02-10&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2013-04-23&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2013-06-21&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2013-08-14&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2013-10-04&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2013-11-27&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2014-01-18&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2014-04-03&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2014-06-05&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2014-08-13&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2014-10-03&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2014-11-26&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2015-01-27&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2015-04-16&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2015-06-12&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2015-08-14&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2015-10-10&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2015-12-03&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2016-02-12&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2016-04-17&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2016-07-08&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2016-09-26&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2016-12-02&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2017-02-17&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2017-05-26&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2017-08-05&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2017-11-10&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2018-02-14&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2018-05-11&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2018-08-10&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2018-11-21&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2005-09-25&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2010-02-15&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2010-04-27&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2010-06-30&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2010-09-03&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2010-10-21&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2010-12-22&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2011-02-18&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2011-04-23&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2011-06-17&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2011-08-18&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2011-09-30&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2011-11-23&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2012-01-19&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2012-04-05&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2012-06-09&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2012-08-07&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2012-10-17&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2012-12-25&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2013-03-01&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2013-05-01&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2013-07-01&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2013-08-28&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2013-10-11&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2013-12-06&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2014-01-31&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2014-04-16&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2014-06-15&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2014-08-22&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2014-10-11&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2014-12-08&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2015-02-06&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2015-04-23&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2015-06-26&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2015-09-02&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2015-10-21&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2015-12-18&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2016-02-25&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2016-04-29&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2016-07-22&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2016-10-12&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2016-12-21&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2017-03-10&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2017-06-15&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2017-08-25&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2017-11-24&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2018-03-09&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2018-06-01&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2018-08-31&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2018-11-30&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2010-01-19&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2010-03-24&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2010-05-22&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2010-07-30&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2010-09-19&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2010-11-11&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2011-01-18&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2011-03-17&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2011-05-06&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2011-07-06&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2011-09-07&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2011-10-15&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2011-12-20&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2012-03-02&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2012-04-27&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2012-07-06&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2012-08-31&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2012-11-11&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2013-01-19&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2013-03-29&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2013-05-22&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2013-07-25&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2013-09-19&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2013-11-08&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2013-12-24&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2014-03-07&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2014-05-09&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2014-07-24&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2014-09-12&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2014-11-05&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2014-12-30&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2015-03-20&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2015-05-15&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2015-07-26&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2015-09-25&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2015-11-09&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2016-01-10&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2016-03-30&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2016-06-10&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2016-09-02&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2016-11-02&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2017-01-19&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2017-04-12&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2017-07-11&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2017-10-08&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2018-01-05&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2018-04-06&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2018-07-06&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2018-10-05&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2010-01-08&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2010-03-12&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2010-05-14&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2010-07-14&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2010-09-15&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2010-11-05&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2011-01-01&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2011-03-04&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2011-05-03&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2011-06-29&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2011-09-02&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2011-10-11&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2011-12-10&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2012-02-17&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2012-04-20&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2012-06-29&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2012-08-22&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2012-10-26&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2013-01-12&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2013-03-17&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2013-05-15&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2013-07-12&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2013-09-12&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2013-10-30&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2013-12-18&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2014-02-20&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2014-04-25&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2014-07-03&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2014-09-05&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2014-10-25&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2014-12-20&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2015-02-28&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2015-05-04&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2015-07-15&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2015-09-13&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2015-11-04&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2015-12-30&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2016-03-11&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2016-05-27&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2016-08-12&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2016-10-23&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2017-01-06&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2017-03-31&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2017-06-28&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2017-09-26&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2017-12-22&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2018-03-28&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2018-06-29&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2018-09-23&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2018-12-19&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2008-11-14&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2010-02-17&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2010-04-30&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2010-07-01&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2010-09-04&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2010-10-22&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2010-12-25&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2011-02-24&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2011-04-25&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2011-06-19&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2011-08-19&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2011-10-04&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2011-11-30&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2012-01-21&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2012-04-06&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2012-06-14&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2012-08-10&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2012-10-18&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2012-12-29&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2013-03-07&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2013-05-02&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2013-07-03&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2013-08-30&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2013-10-12&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2013-12-07&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2014-02-07&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2014-04-17&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2014-06-20&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2014-08-27&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2014-10-13&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2014-12-09&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2015-02-13&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2015-04-24&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2015-07-01&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2015-09-04&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2015-10-23&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2015-12-20&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2016-02-26&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2016-05-06&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2016-07-27&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2016-10-14&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2016-12-23&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2017-03-11&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2017-06-16&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2017-09-01&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2017-12-01&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2018-03-11&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2018-06-08&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2018-09-07&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2018-12-07&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;2010-02-01&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;2010-04-09&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;2010-06-11&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;2010-08-13&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;2010-10-01&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;2010-12-03&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;2011-01-28&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;2011-04-08&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;2011-06-03&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;2011-07-29&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;2011-09-16&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;2011-11-06&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;2011-12-30&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;2012-03-14&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;2012-05-24&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;2012-07-25&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;2012-09-28&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;2012-12-04&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;2013-02-08&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;2013-04-19&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;2013-06-07&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;2013-08-08&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;2013-09-30&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;2013-11-18&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;2014-01-16&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;2014-03-25&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;2014-06-01&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;2014-08-08&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;2014-10-01&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;2014-11-21&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;2015-01-23&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;2015-04-11&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;2015-06-05&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;2015-08-07&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;2015-10-08&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;2015-11-27&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;2016-01-29&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;2016-04-14&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;2016-06-24&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;2016-09-23&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;2016-11-23&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;2017-02-03&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;2017-05-12&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;2017-07-28&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;2017-11-01&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;2018-02-02&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;2018-05-04&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;2018-08-03&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;2018-11-09&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;1968-12-23&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2010-02-09&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2010-04-21&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2010-06-23&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2010-08-26&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2010-10-08&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2010-12-17&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2011-02-04&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2011-04-14&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2011-06-09&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2011-08-09&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2011-09-26&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2011-11-12&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2012-01-07&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2012-03-28&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2012-06-05&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2012-08-03&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2012-10-10&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2012-12-18&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2013-02-14&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2013-04-25&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2013-06-22&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2013-08-16&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2013-10-05&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2013-11-29&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2014-01-19&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2014-04-04&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2014-06-06&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2014-08-15&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2014-10-04&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2014-11-28&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2015-01-28&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2015-04-17&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2015-06-13&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2015-08-21&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2015-10-16&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2015-12-04&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2016-02-17&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2016-04-22&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2016-07-13&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2016-09-30&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2016-12-09&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2017-02-24&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2017-06-02&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2017-08-11&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2017-11-14&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2018-02-16&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2018-05-17&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2018-08-15&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2018-11-23&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;2010-01-27&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;2010-04-02&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;2010-06-04&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;2010-08-07&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;2010-09-28&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;2010-11-24&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;2011-01-24&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;2011-03-31&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;2011-05-25&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;2011-07-21&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;2011-09-13&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;2011-11-01&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;2011-12-25&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;2012-03-11&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;2012-05-18&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;2012-07-14&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;2012-09-21&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;2012-11-23&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;2013-02-01&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;2013-04-17&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;2013-05-31&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;2013-08-02&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;2013-09-27&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;2013-11-15&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;2014-01-03&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;2014-03-19&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;2014-05-23&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;2014-08-05&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;2014-09-26&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;2014-11-14&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;2015-01-09&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;2015-04-03&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;2015-06-03&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;2015-08-04&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;2015-10-03&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;2015-11-20&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;2016-01-26&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;2016-04-08&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;2016-06-20&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;2016-09-16&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;2016-11-13&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;2017-01-27&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;2017-05-01&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;2017-07-23&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;2017-10-20&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;2018-01-26&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;2018-04-27&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;2018-07-27&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;2018-11-02&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2009-11-06&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2010-02-18&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2010-05-01&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2010-07-03&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2010-09-06&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2010-10-29&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2010-12-28&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2011-02-25&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2011-04-27&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2011-06-24&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2011-08-20&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2011-10-06&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2011-12-02&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2012-01-27&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2012-04-10&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2012-06-15&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2012-08-15&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2012-10-19&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2013-01-04&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2013-03-08&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2013-05-03&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2013-07-04&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2013-09-05&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2013-10-16&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2013-12-12&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2014-02-13&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2014-04-18&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2014-06-25&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2014-08-29&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2014-10-17&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2014-12-12&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2015-02-20&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2015-04-25&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2015-07-03&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2015-09-07&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2015-10-28&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2015-12-23&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2016-03-03&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2016-05-13&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2016-07-29&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2016-10-16&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2016-12-25&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2017-03-12&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2017-06-20&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2017-09-08&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2017-12-08&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2018-03-16&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2018-06-09&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2018-09-13&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2018-12-11&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2010-01-21&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2010-03-26&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2010-05-23&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2010-08-01&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2010-09-20&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2010-11-12&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2011-01-21&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2011-03-18&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2011-05-08&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2011-07-08&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2011-09-08&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2011-10-21&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2011-12-21&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2012-03-08&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2012-05-04&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2012-07-07&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2012-09-06&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2012-11-13&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2013-01-22&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2013-04-04&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2013-05-23&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2013-07-26&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2013-09-20&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2013-11-09&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2013-12-25&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2014-03-08&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2014-05-14&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2014-07-25&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2014-09-19&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2014-11-07&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2014-12-31&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2015-03-25&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2015-05-21&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2015-07-28&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2015-09-30&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2015-11-10&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2016-01-15&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2016-04-01&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2016-06-14&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2016-09-04&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2016-11-04&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2017-01-20&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2017-04-14&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2017-07-14&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2017-10-13&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2018-01-12&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2018-04-11&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2018-07-11&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2018-10-12&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;2010-01-22&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;2010-03-31&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;2010-05-27&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;2010-08-03&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;2010-09-23&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;2010-11-19&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;2011-01-22&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;2011-03-25&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;2011-05-13&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;2011-07-14&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;2011-09-09&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;2011-10-27&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;2011-12-23&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;2012-03-09&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;2012-05-11&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;2012-07-12&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;2012-09-07&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;2012-11-16&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;2013-01-25&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;2013-04-05&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;2013-05-24&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;2013-07-29&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;2013-09-21&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;2013-11-11&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;2013-12-27&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;2014-03-10&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;2014-05-16&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;2014-07-31&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;2014-09-24&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;2014-11-08&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;2015-01-01&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;2015-03-26&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;2015-05-22&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;2015-07-29&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;2015-10-01&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;2015-11-13&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;2016-01-22&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;2016-04-06&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;2016-06-17&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;2016-09-08&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;2016-11-08&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;2017-01-21&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;2017-04-21&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;2017-07-19&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;2017-10-17&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;2018-01-17&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;2018-04-13&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;2018-07-13&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;2018-10-19&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;2010-01-29&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;2010-04-08&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;2010-06-10&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;2010-08-12&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;2010-09-30&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;2010-11-26&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;2011-01-27&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;2011-04-01&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;2011-05-27&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;2011-07-22&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;2011-09-15&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;2011-11-04&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;2011-12-29&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;2012-03-12&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;2012-05-22&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;2012-07-20&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;2012-09-27&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;2012-11-30&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;2013-02-05&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;2013-04-18&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;2013-06-06&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;2013-08-07&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;2013-09-29&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;2013-11-16&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;2014-01-10&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;2014-03-21&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;2014-05-30&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;2014-08-07&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;2014-09-30&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;2014-11-20&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;2015-01-16&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;2015-04-10&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;2015-06-04&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;2015-08-05&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;2015-10-07&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;2015-11-25&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;2016-01-27&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;2016-04-10&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;2016-06-22&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;2016-09-22&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;2016-11-18&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;2017-02-01&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;2017-05-05&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;2017-07-27&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;2017-10-27&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;2018-01-28&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;2018-04-30&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;2018-07-30&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;2018-11-06&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;2010-02-04&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;2010-04-16&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;2010-06-17&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;2010-08-18&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;2010-10-02&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;2010-12-10&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;2011-02-02&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;2011-04-10&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;2011-06-06&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;2011-08-04&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;2011-09-22&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;2011-11-09&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;2012-01-04&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;2012-03-16&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;2012-05-25&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;2012-07-27&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;2012-10-04&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;2012-12-07&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;2013-02-09&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;2013-04-20&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;2013-06-14&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;2013-08-09&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;2013-10-02&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;2013-11-22&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;2014-01-17&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;2014-03-28&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;2014-06-03&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;2014-08-11&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;2014-10-02&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;2014-11-22&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;2015-01-25&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;2015-04-14&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;2015-06-09&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;2015-08-13&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;2015-10-09&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;2015-11-30&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;2016-02-05&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;2016-04-15&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;2016-07-01&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;2016-09-25&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;2016-11-25&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;2017-02-10&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;2017-05-19&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;2017-08-04&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;2017-11-03&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;2018-02-09&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;2018-05-10&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;2018-08-08&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;2018-11-16&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2010-01-11&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2010-03-13&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2010-05-16&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2010-07-16&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2010-09-17&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2010-11-06&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2011-01-07&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2011-03-08&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2011-05-04&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2011-06-30&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2011-09-03&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2011-10-13&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2011-12-14&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2012-02-23&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2012-04-22&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2012-07-04&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2012-08-24&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2012-11-02&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2013-01-17&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2013-03-22&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2013-05-16&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2013-07-13&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2013-09-13&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2013-11-01&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2013-12-19&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2014-02-21&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2014-05-01&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2014-07-11&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2014-09-09&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2014-10-31&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2014-12-24&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2015-03-06&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2015-05-08&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2015-07-17&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2015-09-14&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2015-11-06&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2015-12-31&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2016-03-18&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2016-06-03&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2016-08-19&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2016-10-25&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2017-01-10&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2017-04-01&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2017-06-30&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2017-09-29&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2017-12-25&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2018-03-29&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2018-06-30&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2018-09-25&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2018-12-21&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2009-11-07&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2010-02-26&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2010-05-07&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2010-07-09&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2010-09-09&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2010-11-03&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2010-12-29&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2011-03-02&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2011-04-28&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2011-06-27&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2011-08-26&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2011-10-07&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2011-12-07&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2012-02-03&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2012-04-12&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2012-06-22&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2012-08-16&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2012-10-24&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2013-01-10&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2013-03-14&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2013-05-05&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2013-07-05&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2013-09-06&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2013-10-18&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2013-12-13&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2014-02-14&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2014-04-19&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2014-06-27&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2014-08-30&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2014-10-18&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2014-12-17&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2015-02-24&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2015-04-30&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2015-07-07&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2015-09-09&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2015-10-30&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2015-12-25&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2016-03-04&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2016-05-20&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2016-08-02&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2016-10-21&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2016-12-28&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2017-03-15&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2017-06-21&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2017-09-15&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2017-12-15&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2018-03-20&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2018-06-15&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2018-09-14&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2018-12-14&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;1986-04-18&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2010-02-11&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2010-04-23&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2010-06-24&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2010-08-27&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2010-10-11&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2010-12-20&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2011-02-10&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2011-04-15&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2011-06-10&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2011-08-10&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2011-09-27&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2011-11-17&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2012-01-11&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2012-03-29&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2012-06-06&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2012-08-04&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2012-10-11&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2012-12-19&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2013-02-22&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2013-04-26&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2013-06-27&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2013-08-21&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2013-10-06&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2013-12-01&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2014-01-20&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2014-04-06&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2014-06-09&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2014-08-19&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2014-10-09&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2014-12-05&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2015-01-30&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2015-04-18&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2015-06-18&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2015-08-26&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2015-10-17&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2015-12-11&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2016-02-18&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2016-04-25&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2016-07-15&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2016-10-07&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2016-12-10&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2017-03-03&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2017-06-09&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2017-08-18&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2017-11-17&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2018-02-23&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2018-05-18&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2018-08-17&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2018-11-25&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;2010-01-24&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;2010-04-01&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;2010-06-03&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;2010-08-06&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;2010-09-24&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;2010-11-23&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;2011-01-23&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;2011-03-30&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;2011-05-20&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;2011-07-15&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;2011-09-10&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;2011-10-28&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;2011-12-24&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;2012-03-10&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;2012-05-16&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;2012-07-13&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;2012-09-14&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;2012-11-21&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;2013-01-31&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;2013-04-12&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;2013-05-29&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;2013-07-31&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;2013-09-24&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;2013-11-12&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;2014-01-01&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;2014-03-14&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;2014-05-20&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;2014-08-01&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;2014-09-25&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;2014-11-09&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;2015-01-02&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;2015-03-27&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;2015-05-29&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;2015-07-31&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;2015-10-02&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;2015-11-18&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;2016-01-24&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;2016-04-07&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;2016-06-19&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;2016-09-09&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;2016-11-11&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;2017-01-23&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;2017-04-27&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;2017-07-21&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;2017-10-18&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;2018-01-19&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;2018-04-20&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;2018-07-20&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;2018-10-26&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2010-01-15&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2010-03-19&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2010-05-21&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2010-07-23&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2010-09-18&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2010-11-10&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2011-01-13&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2011-03-11&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2011-05-05&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2011-07-01&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2011-09-04&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2011-10-14&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2011-12-16&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2012-02-24&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2012-04-24&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2012-07-05&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2012-08-29&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2012-11-09&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2013-01-18&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2013-03-27&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2013-05-17&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2013-07-19&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2013-09-18&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2013-11-02&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2013-12-20&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2014-02-28&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2014-05-02&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2014-07-18&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2014-09-10&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2014-11-01&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2014-12-25&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2015-03-13&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2015-05-13&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2015-07-24&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2015-09-18&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2015-11-07&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2016-01-08&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2016-03-25&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2016-06-09&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2016-08-26&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2016-10-28&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2017-01-13&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2017-04-07&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2017-07-07&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2017-10-06&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2017-12-31&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2018-03-30&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2018-07-04&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2018-09-28&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2018-12-25&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;1986-06-06&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2010-02-12&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2010-04-25&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2010-06-25&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2010-09-01&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2010-10-15&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2010-12-21&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2011-02-11&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2011-04-22&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2011-06-16&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2011-08-12&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2011-09-28&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2011-11-18&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2012-01-13&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2012-03-30&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2012-06-08&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2012-08-06&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2012-10-12&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2012-12-21&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2013-02-27&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2013-04-30&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2013-06-28&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2013-08-23&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2013-10-10&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2013-12-03&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2014-01-24&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2014-04-11&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2014-06-13&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2014-08-21&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2014-10-10&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2014-12-06&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2015-02-01&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2015-04-19&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2015-06-19&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2015-08-28&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2015-10-19&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2015-12-15&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2016-02-19&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2016-04-28&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2016-07-21&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2016-10-11&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2016-12-16&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2017-03-09&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2017-06-11&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2017-08-21&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2017-11-22&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2018-03-02&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2018-05-25&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2018-08-24&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2018-11-28&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Kenya&quot;' />
+      </semantic-values>
+      <default-sorts>
+        <manual-sort column='[none:Forecast Indicator:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;Actual&quot;</bucket>
+            <bucket>&quot;Estimate&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+      </default-sorts>
+      <analytic-model>
+        <name>
+          <field name='[AnalyticModel:{a5a9899f-6c42-49f7-b7db-1ed9fd8f3abd}]' />
+        </name>
+        <analytic-model-specifications class='cluster-specifications'>
+          <analysis-fields>
+            <field name='[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[sum:domestic_gross:qk]' />
+            <field name='[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[sum:foreign_gross:qk]' />
+            <field name='[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[sum:popularity:qk]' />
+            <field name='[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[sum:vote_count:qk]' />
+          </analysis-fields>
+          <filter-fields />
+          <lod-fields />
+          <number-of-desired-clusters>2</number-of-desired-clusters>
+          <is-dissagregate>false</is-dissagregate>
+        </analytic-model-specifications>
+        <result-fields />
+      </analytic-model>
+      <object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_A7C13B0207FB47D4BE3C02C18E98CCDD'>
+            <properties context=''>
+              <relation connection='excel-direct.0uxhq061qf4erf1e797q80es5x0c' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:I2457:no:A1:I2457:0' header='yes' outcome='6'>
+                  <column datatype='real' name='popularity' ordinal='0' />
+                  <column datatype='string' name='release_date' ordinal='1' />
+                  <column datatype='string' name='title' ordinal='2' />
+                  <column datatype='real' name='vote_average' ordinal='3' />
+                  <column datatype='integer' name='vote_count' ordinal='4' />
+                  <column datatype='string' name='studio' ordinal='5' />
+                  <column datatype='integer' name='domestic_gross' ordinal='6' />
+                  <column datatype='real' name='foreign_gross' ordinal='7' />
+                  <column datatype='integer' name='year' ordinal='8' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_255E79FC3D364F13A51D0DBA7FD42768]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Sheet 8' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action2_CE7343096EE74D839D2FFEA5F65865B8]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Sheet 6' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 3 (generated)' name='[Action3_77E9D17DCB2445CEABD19B6F44AD4CC5]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Sheet 5' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 4 (generated)' name='[Action4_5C349ABC727D4C9391D02000C1B9C4E5]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Sheet 1' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 5 (generated)' name='[Action5_9D55A7B756E84CAAB0AADE548A9EC2A5]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Sheet 2' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Times New Roman' fontsize='11'>TITLE vs VOTE COUNT &amp; AVERAGE</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (movie_final)' name='federated.0w40fgo1b0wjsb1ebpezt0lng2d9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0w40fgo1b0wjsb1ebpezt0lng2d9'>
+            <column-instance column='[release_date]' derivation='None' name='[none:release_date:nk]' pivot='key' type='nominal' />
+            <column-instance column='[title]' derivation='None' name='[none:title:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column caption='Popularity' datatype='real' name='[popularity]' role='measure' type='quantitative' />
+            <column caption='Release Date' datatype='string' name='[release_date]' role='dimension' type='nominal' />
+            <column caption='Studio' datatype='string' name='[studio]' role='dimension' type='nominal' />
+            <column-instance column='[popularity]' derivation='Sum' name='[sum:popularity:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[vote_average]' derivation='Sum' name='[sum:vote_average:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[vote_count]' derivation='Sum' name='[sum:vote_count:qk]' pivot='key' type='quantitative' />
+            <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+            <column caption='Vote Average' datatype='real' name='[vote_average]' role='measure' type='quantitative' />
+            <column caption='Vote Count' datatype='integer' name='[vote_count]' role='measure' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[Action (Studio)]'>
+            <groupfilter function='level-members' level='[studio]' user:ui-action-filter='[Action1_255E79FC3D364F13A51D0DBA7FD42768]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[Action (Studio,Title,Year)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action2_CE7343096EE74D839D2FFEA5F65865B8]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[studio]' />
+              <groupfilter function='level-members' level='[title]' />
+              <groupfilter function='level-members' level='[none:year:ok]' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[none:title:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[sum:vote_count:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[Action (Studio)]</column>
+            <column>[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[Action (Studio,Title,Year)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[none:release_date:nk]' />
+              <text column='[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[none:year:qk]' />
+              <lod column='[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[sum:popularity:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[sum:vote_count:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[none:release_date:nk]' />
+              <text column='[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[none:year:qk]' />
+              <lod column='[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[sum:popularity:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[sum:vote_average:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[none:release_date:nk]' />
+              <text column='[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[none:year:qk]' />
+              <lod column='[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[sum:popularity:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[none:title:nk]</rows>
+        <cols>([federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[sum:vote_count:qk] + [federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[sum:vote_average:qk])</cols>
+      </table>
+      <simple-id uuid='{153BDC8A-0280-4AA0-9AB0-BF0F339F4DC9}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Times New Roman' fontsize='11'>YEARLY GROSS TRENDS</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (movie_final)' name='federated.0w40fgo1b0wjsb1ebpezt0lng2d9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0w40fgo1b0wjsb1ebpezt0lng2d9'>
+            <column caption='Domestic Gross' datatype='integer' name='[domestic_gross]' role='measure' type='quantitative' />
+            <column caption='Foreign Gross' datatype='real' name='[foreign_gross]' role='measure' type='quantitative' />
+            <column-instance column='[year]' derivation='None' name='[none:year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column caption='Studio' datatype='string' name='[studio]' role='dimension' type='nominal' />
+            <column-instance column='[domestic_gross]' derivation='Sum' name='[sum:domestic_gross:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[foreign_gross]' derivation='Sum' name='[sum:foreign_gross:qk]' pivot='key' type='quantitative' />
+            <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[Action (Studio)]'>
+            <groupfilter function='level-members' level='[studio]' user:ui-action-filter='[Action1_255E79FC3D364F13A51D0DBA7FD42768]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[Action (Studio,Title,Year)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action2_CE7343096EE74D839D2FFEA5F65865B8]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[studio]' />
+              <groupfilter function='level-members' level='[title]' />
+              <groupfilter function='level-members' level='[none:year:ok]' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[Action (Studio)]</column>
+            <column>[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[Action (Studio,Title,Year)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <trendline degree='3' enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='polynomial' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-markers-mode' value='all' />
+                <format attr='mark-color' value='#59a14f' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[sum:domestic_gross:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <trendline degree='3' enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='polynomial' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-markers-mode' value='all' />
+                <format attr='mark-color' value='#59a14f' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[sum:foreign_gross:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <trendline degree='3' enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='polynomial' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-markers-mode' value='all' />
+                <format attr='mark-color' value='#59a14f' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[sum:domestic_gross:qk] + [federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[sum:foreign_gross:qk])</rows>
+        <cols>[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[none:year:qk]</cols>
+      </table>
+      <simple-id uuid='{C00613D0-2817-4C9E-BEF3-D69387C94714}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Times New Roman' fontsize='11'>VOTE COUNT IN GROSS AND POPULARITY</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (movie_final)' name='federated.0w40fgo1b0wjsb1ebpezt0lng2d9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0w40fgo1b0wjsb1ebpezt0lng2d9'>
+            <column caption='Domestic Gross' datatype='integer' name='[domestic_gross]' role='measure' type='quantitative' />
+            <column caption='Foreign Gross' datatype='real' name='[foreign_gross]' role='measure' type='quantitative' />
+            <column-instance column='[year]' derivation='None' name='[none:year:ok]' pivot='key' type='ordinal' />
+            <column caption='Popularity' datatype='real' name='[popularity]' role='measure' type='quantitative' />
+            <column caption='Studio' datatype='string' name='[studio]' role='dimension' type='nominal' />
+            <column-instance column='[domestic_gross]' derivation='Sum' name='[sum:domestic_gross:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[foreign_gross]' derivation='Sum' name='[sum:foreign_gross:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[popularity]' derivation='Sum' name='[sum:popularity:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[vote_count]' derivation='Sum' name='[sum:vote_count:qk]' pivot='key' type='quantitative' />
+            <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+            <column caption='Vote Count' datatype='integer' name='[vote_count]' role='measure' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[Action (Studio)]'>
+            <groupfilter function='level-members' level='[studio]' user:ui-action-filter='[Action1_255E79FC3D364F13A51D0DBA7FD42768]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[Action (Studio,Title,Year)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action2_CE7343096EE74D839D2FFEA5F65865B8]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[studio]' />
+              <groupfilter function='level-members' level='[title]' />
+              <groupfilter function='level-members' level='[none:year:ok]' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[Action (Studio)]</column>
+            <column>[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[Action (Studio,Title,Year)]</column>
+          </slices>
+          <aggregation value='false' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#4e79a7' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[sum:domestic_gross:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <trendline degree='3' enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='polynomial' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#4e79a7' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[sum:foreign_gross:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <trendline degree='3' enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='polynomial' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#4e79a7' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[sum:popularity:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <trendline degree='3' enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='polynomial' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#4e79a7' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[sum:domestic_gross:qk] + ([federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[sum:foreign_gross:qk] + [federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[sum:popularity:qk]))</rows>
+        <cols>[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[sum:vote_count:qk]</cols>
+      </table>
+      <simple-id uuid='{107045D3-2F90-44E3-A1FC-3574F1F45D1C}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#59a14f' fontname='Times New Roman' fontsize='11' underline='true'>DOMESTIC,FOREIGN GROSS vs TITLE</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (movie_final)' name='federated.0w40fgo1b0wjsb1ebpezt0lng2d9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0w40fgo1b0wjsb1ebpezt0lng2d9'>
+            <column caption='Domestic Gross' datatype='integer' name='[domestic_gross]' role='measure' type='quantitative' />
+            <column caption='Foreign Gross' datatype='real' name='[foreign_gross]' role='measure' type='quantitative' />
+            <column-instance column='[studio]' derivation='None' name='[none:studio:nk]' pivot='key' type='nominal' />
+            <column-instance column='[title]' derivation='None' name='[none:title:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column caption='Popularity' datatype='real' name='[popularity]' role='measure' type='quantitative' />
+            <column caption='Studio' datatype='string' name='[studio]' role='dimension' type='nominal' />
+            <column-instance column='[domestic_gross]' derivation='Sum' name='[sum:domestic_gross:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[foreign_gross]' derivation='Sum' name='[sum:foreign_gross:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[popularity]' derivation='Sum' name='[sum:popularity:qk]' pivot='key' type='quantitative' />
+            <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[Action (Studio)]'>
+            <groupfilter function='level-members' level='[studio]' user:ui-action-filter='[Action1_255E79FC3D364F13A51D0DBA7FD42768]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <computed-sort column='[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[none:title:nk]' direction='DESC' using='[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[sum:domestic_gross:qk]' />
+          <slices>
+            <column>[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[Action (Studio)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[none:studio:nk]' />
+              <lod column='[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[none:year:qk]' />
+              <text column='[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[sum:popularity:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[sum:domestic_gross:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[none:studio:nk]' />
+              <lod column='[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[none:year:qk]' />
+              <text column='[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[sum:popularity:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[sum:foreign_gross:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[none:studio:nk]' />
+              <lod column='[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[none:year:qk]' />
+              <text column='[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[sum:popularity:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[none:title:nk]</rows>
+        <cols>([federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[sum:domestic_gross:qk] + [federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[sum:foreign_gross:qk])</cols>
+      </table>
+      <simple-id uuid='{A981114F-0B76-4A4D-BF84-012E6552E08A}' />
+    </worksheet>
+    <worksheet name='Sheet 8'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Times New Roman' fontsize='11' underline='true'>STUDIO POPULARITY</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (movie_final)' name='federated.0w40fgo1b0wjsb1ebpezt0lng2d9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0w40fgo1b0wjsb1ebpezt0lng2d9'>
+            <column-instance column='[studio]' derivation='None' name='[none:studio:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:ok]' pivot='key' type='ordinal' />
+            <column caption='Popularity' datatype='real' name='[popularity]' role='measure' type='quantitative' />
+            <column caption='Studio' datatype='string' name='[studio]' role='dimension' type='nominal' />
+            <column-instance column='[popularity]' derivation='Sum' name='[sum:popularity:qk]' pivot='key' type='quantitative' />
+            <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[Action (Studio,Title,Year)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action2_CE7343096EE74D839D2FFEA5F65865B8]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[studio]' />
+              <groupfilter function='level-members' level='[title]' />
+              <groupfilter function='level-members' level='[none:year:ok]' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[Action (Studio,Title,Year)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[none:studio:nk]' />
+              <size column='[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[sum:popularity:qk]' />
+              <text column='[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[none:studio:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{35A0FE84-12DD-4E53-B95D-4524D5E1B3C3}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='860' maxwidth='650' minheight='560' minwidth='420' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97142' id='20' param='horz' type-v2='layout-flow' w='97538' x='1231' y='1429'>
+            <zone h='97142' id='17' param='horz' type-v2='layout-flow' w='97538' x='1231' y='1429'>
+              <zone h='97142' id='14' param='horz' type-v2='layout-flow' w='97538' x='1231' y='1429'>
+                <zone h='97142' id='7' param='horz' type-v2='layout-flow' w='97538' x='1231' y='1429'>
+                  <zone h='97142' id='5' type-v2='layout-basic' w='97538' x='1231' y='1429'>
+                    <zone h='43928' id='12' name='Sheet 8' w='41077' x='1231' y='1429'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='53214' id='15' name='Sheet 6' w='32512' x='66257' y='45357'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='53214' id='18' name='Sheet 1' w='32512' x='1231' y='45357'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='43928' id='21' name='Sheet 5' w='56461' x='42308' y='1429'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='53214' id='22' name='Sheet 2' w='32514' x='33743' y='45357'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1450' minheight='1450' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='24' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97142' id='23' param='vert' type-v2='layout-flow' w='97538' x='1231' y='1429'>
+                <zone fixed-size='280' h='43928' id='12' is-fixed='true' name='Sheet 8' w='41077' x='1231' y='1429'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='43928' id='21' is-fixed='true' name='Sheet 5' w='56461' x='42308' y='1429'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='53214' id='18' is-fixed='true' name='Sheet 1' w='32512' x='1231' y='45357'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='53214' id='22' is-fixed='true' name='Sheet 2' w='32514' x='33743' y='45357'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='53214' id='15' is-fixed='true' name='Sheet 6' w='32512' x='66257' y='45357'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{71818DA5-4F90-4B42-B688-96E2DE5143AD}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[none:release_date:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{75160CCC-F12B-44EC-8C59-FA7499BFCAEA}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{2A366653-06F6-493D-8B67-347254FB1E85}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{9F01FCEE-6EA4-4543-A628-4B34A82F9864}' />
+    </window>
+    <window class='worksheet' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[none:studio:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D53EF1F7-2140-442D-AB37-18B18CC0EEAC}' />
+    </window>
+    <window class='worksheet' name='Sheet 8'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0w40fgo1b0wjsb1ebpezt0lng2d9].[none:studio:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B3D2B1F8-B1B3-48BB-AA4F-C348A54C34E7}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 1' />
+        <viewpoint name='Sheet 2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 5'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 6' />
+        <viewpoint name='Sheet 8' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{175C9B37-02DE-4228-9CD3-1A852AD7783A}' />
+    </window>
+  </windows>
+</workbook>
