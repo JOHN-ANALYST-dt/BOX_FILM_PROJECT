@@ -27,3 +27,4 @@ iv) Factors that influence domestic and international gross</p>
 <h3>4.1Data Structure</h3>
 <p>Understanding the data structure, we will check at the data types from our data </p>
 <img src="images/sct.PNG"> <img src="images/budget.PNG">
+<p>From our data Information, we are able to see the kind of data set and types  we have,  on the column names we have the names and date and on the Dtype<br> we have the data types Objects are much more than the floats </p>
