@@ -49,4 +49,4 @@ From our data base file , we have a data which have the entire collected data fr
 i)<p><b>Movies Popularity</b></p>
 <img src="images/SCR_AVG.PNG">
 ii)<p>Annual Domestic gross income </p>
-<img src="images/line.PNG"
+<img src="images/line.PNG">
