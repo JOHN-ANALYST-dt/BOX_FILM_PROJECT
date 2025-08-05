@@ -48,5 +48,7 @@ From our data base file , we have a data which have the entire collected data fr
 <p>The visualizations we have in our analysis from the provided data will help us to understand what we have and making conclutions </p>
 i)<p><b>Movies Popularity</b></p>
 <img src="images/SCR_AVG.PNG">
-ii)<p>Annual Domestic gross income </p>
+ii)<p><b>Annual Domestic gross income</b> </p>
 <img src="images/line.PNG">
+iii)<p><b>Correlation in Gross Domestic in vote count and popularity </b></b></p>
+<img src="images/trends.PNG">
