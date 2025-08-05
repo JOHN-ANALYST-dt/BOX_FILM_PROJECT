@@ -7,11 +7,19 @@ Drawing of the trend lines to tell us the next expectations Plotting of the bar 
 <h2>2.0.Business Understanding</h2>
 <p>This project explores patterns in box office performance to help a new movie studio understand what types of films are currently performing best.<br>
 The insights derived from this analysis are intended to guide strategic decisions in film production, focusing on genres, budgets, and other key factors influencing success.</p>
-<h2><b>Business Objectives</b></h2>
+<h2><b>3.0.Business Objectives</b></h2>
 <p>
 As more companies venture into original video content, this analysis supports our company's entry into the industry by identifying<br>
 i) What genres are performing best<br>
 ii) Optimal budget ranges for profitability<br>
 iii) Key trends in studio success and distribution<br>
 iv) Factors that influence domestic and international gross</p>
-
+<h2>Stake holders</h2>
+<p>
+  <b>Project sponsor:</b> Champions the project and ensure it alligns with company goals<br>
+<b>Project Sponsor:</b> Responsible for planning, executing and delivering the project<br>
+<b>Airline Customers:</b> Impacted by project outcomes, such us the new aircraft deliveries<br>
+<b>Flight Operation Teams:</b> they are impacted with the project outcomes and the make of the aircraft<br>
+<b>Safety and Risk Management Teams:</b> Responsible for identifying and mitigating risks to ensure safe operations<br>
+<b>Finance and accounting Team:</b> Responsible for managing project budget and financial reporting
+</p>
