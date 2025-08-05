@@ -14,7 +14,7 @@ i) What genres are performing best<br>
 ii) Optimal budget ranges for profitability<br>
 iii) Key trends in studio success and distribution<br>
 iv) Factors that influence domestic and international gross</p>
-<h2>Stake holders</h2>
+<h2>3.1.Stake holders</h2>
 <p>
   <b>i)Project sponsor:</b> Champions the project and ensure it alligns with company goals<br>
 <b>ii)Project Sponsor:</b> Responsible for planning, executing and delivering the project<br>
@@ -22,3 +22,5 @@ iv) Factors that influence domestic and international gross</p>
 <b>iv)Box movie Operation Teams:</b> they are impacted with the project outcomes and the make of the Box film<br>
 <b>v)Finance and accounting Team:</b> Responsible for managing project budget and financial reporting
 </p>
+<h2>4.0 Data Understanding</h2>
+<p><b>Data source:</b><p>The files we will use in the analysis are in different formats, some in CSV, TSV, and a database file. <br>We obtained our data from a GitHub account,<br> which you can <a href="https://github.com/learn-co-curriculum/dsc-phase-2-project-v3">Visit by clicking</a></p></p>
