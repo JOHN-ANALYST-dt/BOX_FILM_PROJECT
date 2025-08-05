@@ -38,10 +38,13 @@ From our data base file , we have a data which have the entire collected data fr
   vi)movie ratings<br>
   vii)Movie ratings<br>
   viii)movie akas
-  
 </p>
 
 
 <h3><b>4.2.Initial Observations and Exploratory Analysis</b></h3>
 <p>From our Data , we have some missing values which we need to do some cleaning first before we do visualization, we need to fill each string with the mode and each float with the median. this will help us to calculate the mean and the standard variation in determing the data distributions</p>
 <h3><b></b></h3>
+<h2><b>Visualization</b></h2>
+<p>The visualizations we have in our analysis from the provided data will help us to understand what we have and making conclutions </p>
+i)<p><b>Movies Popularity</b></p>
+<img src="images/SCR_AVG.PNG"
