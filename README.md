@@ -23,4 +23,7 @@ iv) Factors that influence domestic and international gross</p>
 <b>v)Finance and accounting Team:</b> Responsible for managing project budget and financial reporting
 </p>
 <h2>4.0 Data Understanding</h2>
-<p><b>Data source:</b><p>The files we will use in the analysis are in different formats, some in CSV, TSV, and a database file. <br>We obtained our data from a GitHub account,<br> which you can <a href="https://github.com/learn-co-curriculum/dsc-phase-2-project-v3">Visit by clicking</a></p></p>
+<p><b>Data source:</b><p>The files we will use in the analysis are in different formats, some in CSV, TSV, and a database file. <br>We obtained our data from a GitHub account,which you can <a href="https://github.com/learn-co-curriculum/dsc-phase-2-project-v3">Visit by clicking</a></p></p>
+<h3>4.1Data Structure</h3>
+<p>Understanding the data structure, we will check at the data types from our data </p>
+<img src="Images/snipp2.PNG">
