@@ -28,6 +28,20 @@ iv) Factors that influence domestic and international gross</p>
 <p>Understanding the data structure, we will check at the data types from our data </p>
 <img src="images/sct.PNG"> <img src="images/budget.PNG">
 <p>From our data Information, we are able to see the kind of data set and types  we have,  on the column names we have the names and date and on the Dtype<br> we have the data types Objects are much more than the floats </p>
+<p><b>Data base:</b>
+From our data base file , we have a data which have the entire collected data from the BOX OFFICE,some of the tables we have within the data base include
+  i) Persons<br>
+  ii)Principals<br>
+  iii)Directors<br>
+  iv)Writers<br>
+  v)Directors
+  vi)movie ratings
+  vii)Movie ratings
+  viii)movie akas
+  
+</p>
+
+
 <h3><b>4.2.Initial Observations and Exploratory Analysis</b></h3>
 <p>From our Data , we have some missing values which we need to do some cleaning first before we do visualization, we need to fill each string with the mode and each float with the median. this will help us to calculate the mean and the standard variation in determing the data distributions</p>
 <h3><b></b></h3>
