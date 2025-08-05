@@ -47,4 +47,4 @@ From our data base file , we have a data which have the entire collected data fr
 <h2><b>Visualization</b></h2>
 <p>The visualizations we have in our analysis from the provided data will help us to understand what we have and making conclutions </p>
 i)<p><b>Movies Popularity</b></p>
-<img src="images/SCR_AVG.PNG"
+<img src="images/SCR_AVG.PNG">
