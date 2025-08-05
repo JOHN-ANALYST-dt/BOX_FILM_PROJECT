@@ -34,9 +34,9 @@ From our data base file , we have a data which have the entire collected data fr
   ii)Principals<br>
   iii)Directors<br>
   iv)Writers<br>
-  v)Directors
-  vi)movie ratings
-  vii)Movie ratings
+  v)Directors<br>
+  vi)movie ratings<br>
+  vii)Movie ratings<br>
   viii)movie akas
   
 </p>
