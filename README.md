@@ -16,9 +16,9 @@ iii) Key trends in studio success and distribution<br>
 iv) Factors that influence domestic and international gross</p>
 <h2>Stake holders</h2>
 <p>
-  <b>Project sponsor:</b> Champions the project and ensure it alligns with company goals<br>
-<b>Project Sponsor:</b> Responsible for planning, executing and delivering the project<br>
-<b>Box film Customers:</b> Impacted by project outcomes, such us the new movies<br>
-<b>Box movie Operation Teams:</b> they are impacted with the project outcomes and the make of the Box film<br>
-<b>Finance and accounting Team:</b> Responsible for managing project budget and financial reporting
+  <b>i)Project sponsor:</b> Champions the project and ensure it alligns with company goals<br>
+<b>ii)Project Sponsor:</b> Responsible for planning, executing and delivering the project<br>
+<b>iii)Box film Customers:</b> Impacted by project outcomes, such us the new movies<br>
+<b>iv)Box movie Operation Teams:</b> they are impacted with the project outcomes and the make of the Box film<br>
+<b>v)Finance and accounting Team:</b> Responsible for managing project budget and financial reporting
 </p>
