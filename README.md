@@ -53,7 +53,7 @@ ii)<p><b>Annual Domestic gross income</b> </p>
 iii)<p><b>Correlation in Gross Domestic in vote count and popularity </b></b></p>
 <img src="images/trends.PNG">
 
-<h2><b>Conclution:</b>
+<h2><b>Conclution:</b></h2>
 1. Financial Success is Driven by Genre & Talent
 <br>
     <br>
@@ -68,4 +68,4 @@ iii)<p><b>Correlation in Gross Domestic in vote count and popularity </b></b></p
 6.BV  is the highest producing Studio
 <br><br>
 7.There is a positive correlationship of the domestic and foreign gross
-</h2>
+
