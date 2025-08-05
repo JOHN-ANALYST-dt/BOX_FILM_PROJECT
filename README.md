@@ -7,5 +7,11 @@ Drawing of the trend lines to tell us the next expectations Plotting of the bar 
 <h2>2.0.Business Understanding</h2>
 <p>This project explores patterns in box office performance to help a new movie studio understand what types of films are currently performing best.<br>
 The insights derived from this analysis are intended to guide strategic decisions in film production, focusing on genres, budgets, and other key factors influencing success.</p>
-
+<h2><b>Business Objectives</b></h2>
+<p>
+As more companies venture into original video content, this analysis supports our company's entry into the industry by identifying<br>
+i) What genres are performing best<br>
+ii) Optimal budget ranges for profitability<br>
+iii) Key trends in studio success and distribution<br>
+iv) Factors that influence domestic and international gross</p>
 
