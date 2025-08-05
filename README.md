@@ -18,8 +18,7 @@ iv) Factors that influence domestic and international gross</p>
 <p>
   <b>Project sponsor:</b> Champions the project and ensure it alligns with company goals<br>
 <b>Project Sponsor:</b> Responsible for planning, executing and delivering the project<br>
-<b>Airline Customers:</b> Impacted by project outcomes, such us the new aircraft deliveries<br>
-<b>Flight Operation Teams:</b> they are impacted with the project outcomes and the make of the aircraft<br>
-<b>Safety and Risk Management Teams:</b> Responsible for identifying and mitigating risks to ensure safe operations<br>
+<b>Box film Customers:</b> Impacted by project outcomes, such us the new movies<br>
+<b>Box movie Operation Teams:</b> they are impacted with the project outcomes and the make of the Box film<br>
 <b>Finance and accounting Team:</b> Responsible for managing project budget and financial reporting
 </p>
