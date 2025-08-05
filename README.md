@@ -52,3 +52,20 @@ ii)<p><b>Annual Domestic gross income</b> </p>
 <img src="images/line.PNG">
 iii)<p><b>Correlation in Gross Domestic in vote count and popularity </b></b></p>
 <img src="images/trends.PNG">
+
+<h2><b>Conclution:</b>
+1. Financial Success is Driven by Genre & Talent
+<br>
+    <br>
+2.International Markets Offer Major Revenue Potential
+<br><br>
+3.Audience Engagement & Brand Building Are Critical
+<br><br>
+4.The most populr movie world wide is Avatar with the highest budget in production
+<br><br>
+5. The writers, composers and the directors affect the impact to the clients
+<br><br>
+6.BV  is the highest producing Studio
+<br><br>
+7.There is a positive correlationship of the domestic and foreign gross
+</h2>
