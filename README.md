@@ -26,4 +26,4 @@ iv) Factors that influence domestic and international gross</p>
 <p><b>Data source:</b><p>The files we will use in the analysis are in different formats, some in CSV, TSV, and a database file. <br>We obtained our data from a GitHub account,which you can <a href="https://github.com/learn-co-curriculum/dsc-phase-2-project-v3">Visit by clicking</a></p></p>
 <h3>4.1Data Structure</h3>
 <p>Understanding the data structure, we will check at the data types from our data </p>
-<img src="Images/snipp2.PNG">
+<img src="images/sct.PNG"> <img src="images/budget.PNG">
